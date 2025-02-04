@@ -112,6 +112,13 @@ Les layouts
   padding: 10vh 5vw;
 }
 
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .entete {
   display: flex;
   justify-content: space-between;
@@ -138,6 +145,21 @@ Les layouts
 }
 .entete__logo img {
   width: 100px;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100vw;
+}
+.galerie__figure img {
+  width: 100%;
+}
+.galerie__figure {
+  max-width: 17vw;
+  display: flex;
+  margin: 5px 5px;
 }
 
 .hero {
