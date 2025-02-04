@@ -1,4 +1,17 @@
 .hero{
     background-image: url("images/maldives.jpg");
     min-height: 100vh;
+
+    &__inscrire {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: turquoise;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }

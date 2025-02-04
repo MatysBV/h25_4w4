@@ -72,6 +72,11 @@ Les composants
 .menu__li a {
   text-decoration: none;
   padding: 4px;
+  color: black;
+}
+
+.entete__menu ul {
+  margin-right: 20px;
 }
 
 .recherche {
@@ -131,8 +136,23 @@ Les layouts
     width: 100vw;
   }
 }
+.entete__logo img {
+  width: 100px;
+}
 
 .hero {
   background-image: url("images/maldives.jpg");
   min-height: 100vh;
+}
+.hero__inscrire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: turquoise;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */
