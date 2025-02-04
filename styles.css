@@ -162,6 +162,17 @@ main {
   margin: 5px 5px;
 }
 
+.galerie__destinationFav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  margin-right: 70vw;
+}
+
 .hero {
   background-image: url("images/maldives.jpg");
   min-height: 100vh;
