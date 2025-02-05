@@ -104,6 +104,27 @@ Les composants
   padding: 3px;
 }
 
+.formulaire {
+  position: relative;
+  bottom: 50px;
+}
+.formulaire__form {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  border: 2px solid black;
+  box-shadow: 0 0 15px black;
+  background-color: white;
+  padding: 25px 61px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 800px) {
+  .formulaire__form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
@@ -141,17 +162,39 @@ main {
     padding: 20px;
     flex-direction: column;
     width: 100vw;
+    translate: 100% 70px;
+    transition: translate 0.3s ease;
   }
 }
 .entete__logo img {
   width: 100px;
 }
+.entete__check {
+  display: none;
+}
+.entete__label {
+  display: none;
+}
+.entete__label:checked ~ .entete__label__navigation {
+  translate: 0 70px;
+}
+@media screen and (max-width: 800px) {
+  .entete__label {
+    display: block;
+    z-index: 1000;
+  }
+}
+.entete .entete__check:checked ~ .entete__navigation {
+  translate: 0 70px;
+}
 
 .galerie {
+  max-width: 100vw;
+}
+.galerie__collection {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100vw;
+  padding: 0;
 }
 .galerie__figure img {
   width: 100%;
@@ -162,20 +205,15 @@ main {
   margin: 5px 5px;
 }
 
-.galerie__destinationFav {
+main {
   display: flex;
-  justify-content: flex-start;
-  align-items: end;
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  text-transform: uppercase;
-  margin-right: 70vw;
+  flex-direction: column;
 }
 
 .hero {
   background-image: url("images/maldives.jpg");
   min-height: 100vh;
+  background-size: cover;
 }
 .hero__inscrire {
   display: flex;

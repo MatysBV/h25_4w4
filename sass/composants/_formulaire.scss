@@ -1,0 +1,22 @@
+.formulaire {
+
+    position: relative;
+    bottom: 50px;
+
+    &__form {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        border: 2px solid black;
+        box-shadow: 0 0 15px black;
+        background-color: white;
+        padding: 25px 61px;
+        text-transform: capitalize;
+
+        @media screen and (max-width:800px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}

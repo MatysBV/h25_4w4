@@ -1,34 +1,52 @@
-.entete{
+.entete {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &__navigation {
         @media screen and (max-width: 800px) {
-            position : absolute;
-            top:0;
-            right:0;
+            position: absolute;
+            top: 0;
+            right: 0;
             background-color: #fff;
-            padding : 20px;
-            flex-direction: column; 
-            width : 100vw;
+            padding: 20px;
+            flex-direction: column;
+            width: 100vw;
+            translate: 100% 70px;
+            transition: translate 0.3s ease;
         }
-        width : auto;
-        position : static;
-        flex-direction: row; 
+
+        width: auto;
+        position: static;
+        flex-direction: row;
         background-color: transparent;
 
-
-
-
         display: flex;
-        
         align-items: center;
-                                                                   
     }
 
     &__logo img {
         width: 100px;
     }
 
-}
+    &__check {
+        display: none;
+    }
 
+    &__label {
+        display: none;
+
+        &:checked~&__navigation {
+            translate: 0 70px;
+        }
+
+        @media screen and (max-width:800px) {
+            display: block;
+            z-index: 1000;
+        }
+    }
+
+    .entete__check:checked~.entete__navigation {
+        translate: 0 70px;
+    }
+}

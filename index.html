@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,19 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="entete">
             <figure class="entete__logo">
                 <img src="images/Air_Transat_Logo.png" alt="">
             </figure>
+
+
+            <label for="menuBurger" class="entete__label">
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32">
+            </label>
+            <input type="checkbox" name="menuBurger" id="menuBurger" class="entete__check">
             <div class="entete__navigation">
                 <nav class="entete__menu">
                     <ul class="menu">
@@ -50,7 +58,8 @@
                 </nav>
                 <form class="recherche">
                     <input type="search" placeholder="Rechercher" class="recherche__input">
-                    <img class="recherche__img"  src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="16" height="16">
+                    <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000"
+                        width="16" height="16">
                 </form>
             </div> <!-- fin entete__navigation  -->
         </div>
@@ -81,40 +90,69 @@
 
     </section>
     <main>
-        <p class="galerie__destinationFav">Nos destinations favorites</p>
+        <div class="formulaire">
+            <form class="formulaire__form">
+                <div class="formulaire__nom">
+                    <p class="formulaire__titre">Nom</p>
+                    <input type="text" class="formulaire__input" placeholder="Écrivez votre Prénom">
+                </div>
+                <div class="formulaire__nom">
+                    <p class="formulaire__titre">Prénom</p>
+                    <input type="text" class="formulaire__input" placeholder="Écrivez votre Nom">
+                </div>
+                <div class="formulaire__nom">
+                    <p class="formulaire__titre">Courriel</p>
+                    <input type="text" class="formulaire__input" placeholder="Écrivez votre Courriel">
+                </div>
+                <div class="formulaire__nom">
+                    <p class="formulaire__titre">Téléphone</p>
+                    <input type="text" class="formulaire__input" placeholder="Écrivez votre Téléphone">
+                </div>
+                <div class="formulaire__nom">
+                    <button class="formulaire__inscrireForm">S'INSCRIRE</button>
+                </div>
+            </form>
+        </div>
+
+
+
         <div class="galerie global">
-            <figure class="galerie__figure">
-                <img src="images/image1.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image3.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image1.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image3.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image1.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
+            <h4 class="galerie__destinationFav">Nos destinations favorites</h4>
+            <div class="galerie__collection">
+                <figure class="galerie__figure">
+                    <img src="images/image1.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image2.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image3.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image2.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image1.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image2.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image3.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image2.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image1.jpg" alt="" class="galerie__img">
+                </figure>
+                <figure class="galerie__figure">
+                    <img src="images/image2.jpg" alt="" class="galerie__img">
+                </figure>
+            </div>
         </div>
     </main>
     <footer></footer>
 </body>
+
 </html>
