@@ -69,7 +69,7 @@ Les composants
     flex-direction: column;
   }
 }
-.menu__li a {
+.menu-item a {
   text-decoration: none;
   padding: 4px;
   color: black;
@@ -140,6 +140,7 @@ Les composants
 .carte__contenu {
   background-color: aliceblue;
 }
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
