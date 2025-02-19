@@ -264,9 +264,13 @@ footer {
 .piedpage__s1__externe {
   flex: 0 0 20%;
 }
+.piedpage__s1__externe .menu {
+  display: flex;
+  flex-direction: column;
+}
 .piedpage__s1__adresse {
   flex: 0 0 40%;
 }
 .piedpage__s1__description {
-  flex: 1;
+  flex: 1 0 400px;
 }/*# sourceMappingURL=style.css.map */
