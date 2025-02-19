@@ -1,7 +1,7 @@
     <?php get_header(); ?>
     <!--  -->
     <!--  -->
-    <h1>------------------ INDEX.PHP ------------------</h1>
+    <!-- <h1>------------------ INDEX.PHP ------------------</h1> -->
     <!--  -->
     <section class="populaire">
         <div class="global">
@@ -14,7 +14,7 @@
             endif; ?>
         </div>
     </section>
-    <?php wp_footer() ?>
+    <?php get_footer(); ?>
     </body>
 
     </html>

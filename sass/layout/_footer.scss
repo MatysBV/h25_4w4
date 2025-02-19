@@ -1,0 +1,29 @@
+/*
+    -------------------------- Layout du pied de page --------------------------
+*/
+
+footer {
+    background-color: rgb(223, 127, 10);
+    color: #000;
+}
+
+.piedpage {
+    display: flex;
+    flex-direction: column;
+    &__s1{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        &__externe{
+            flex: 0 0 20%;
+        }
+        &__adresse{
+            flex: 0 0 40%;
+            &__coord{}
+            &__recherche{}
+        }
+        &__description{
+            flex: 1;
+        }
+    }
+}

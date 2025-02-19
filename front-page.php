@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!--  -->
 <!--  -->
-<h1>------------------ FRONT-PAGE.PHP ------------------</h1>
+<!-- <h1>------------------ FRONT-PAGE.PHP ------------------</h1> -->
 <!--  -->
 <section class="hero">
     <div class="hero__contenu global">
@@ -104,7 +104,7 @@
     </div>
 </section>
 <footer></footer>
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
 </body>
 
 </html>
