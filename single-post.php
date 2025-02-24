@@ -1,7 +1,7 @@
     <?php get_header(); ?>
     <!--  -->
     <!--  -->
-    <h1>------------------ SINGLE-POST.PHP ------------------</h1>
+    <!-- <h1>------------------ SINGLE-POST.PHP ------------------</h1> -->
     <!--  -->
     <section class="populaire">
         <div class="global">

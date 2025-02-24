@@ -5,11 +5,6 @@
  */
 ?>
 
-<article>
-    <h2><?php the_title(); ?></h2>
-    <div><?php echo wp_trim_words(get_the_content(), 10, "..."); ?></div>
-</article>
-
 <article class="carte carte--grande">
     <figure class="carte__image">
         <img src="voyage.jpg" alt="Image de voyage">
