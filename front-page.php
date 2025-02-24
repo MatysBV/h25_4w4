@@ -18,7 +18,7 @@
         <p class="hero__adresse">
             5800 Sherbrooke-est - Montréal (Québec) H1X 2A2
         </p>
-        <div class="hero__inscrire">S'INSCRIRE</div>
+        <button class="hero__inscrire">S'INSCRIRE</button>
         <div class="hero__icone">
             <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
             <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
