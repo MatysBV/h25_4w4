@@ -182,9 +182,6 @@ main {
     transition: translate 0.3s ease;
   }
 }
-.entete__logo img {
-  width: 100px;
-}
 .entete__check {
   display: none;
 }
