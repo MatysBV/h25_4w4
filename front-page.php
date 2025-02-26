@@ -53,10 +53,9 @@
         </form>
     </div>
 
-
-
-    <div class="galerie global">
         <h4 class="galerie__destinationFav">Nos destinations favorites</h4>
+        
+    <!-- <div class="galerie global">
         <div class="galerie__collection">
             <figure class="galerie__figure">
                 <img src="images/image1.jpg" alt="" class="galerie__img">
@@ -89,7 +88,9 @@
                 <img src="images/image2.jpg" alt="" class="galerie__img">
             </figure>
         </div>
-    </div>
+    </div> -->
+
+
 </main>
 <section class="populaire">
     <div class="global">
