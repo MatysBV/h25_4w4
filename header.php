@@ -33,40 +33,7 @@
                     'container'            => 'div',
                     'container_class'      => '',
                 )); ?>
-                <!-- <nav class="entete__menu">
-                    <ul class="menu">
-                        <li class="menu__li">
-                            <a href="#">Aventure</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Culturel</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Zen</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Tourtereau</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Aventure</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Culturel</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Zen</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#">Tourtereau</a>
-                        </li>
-                    </ul>
-                </nav> -->
+
                 <?php get_search_form() ?>
                 <!-- <form class="recherche">
                     <input type="search" placeholder="Rechercher" class="recherche__input">

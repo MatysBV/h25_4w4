@@ -54,41 +54,6 @@
     </div>
 
         <h4 class="galerie__destinationFav">Nos destinations favorites</h4>
-        
-    <!-- <div class="galerie global">
-        <div class="galerie__collection">
-            <figure class="galerie__figure">
-                <img src="images/image1.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image3.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image1.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image3.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image1.jpg" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="images/image2.jpg" alt="" class="galerie__img">
-            </figure>
-        </div>
-    </div> -->
 
 
 </main>
