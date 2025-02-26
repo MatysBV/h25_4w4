@@ -3,6 +3,8 @@
 <!--  -->
 <!-- <h1>------------------ CATEGORY.PHP ------------------</h1> -->
 <!--  -->
+<h1><?php single_cat_title(); ?></h1>
+<p><?php echo category_description(); ?></p>
 <section class="populaire">
     <div class="global">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
