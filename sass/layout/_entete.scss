@@ -52,4 +52,12 @@
     .entete__check:checked~.entete__navigation {
         translate: 0 70px;
     }
+
+    .menu-principal-container {
+        margin-right: 50px;
+
+        @media screen and (max-width:800px) {
+            margin-right: 0;
+        }
+    }
 }

@@ -211,6 +211,14 @@ main {
 .entete .entete__check:checked ~ .entete__navigation {
   translate: 0 70px;
 }
+.entete .menu-principal-container {
+  margin-right: 50px;
+}
+@media screen and (max-width: 800px) {
+  .entete .menu-principal-container {
+    margin-right: 0;
+  }
+}
 
 .hero {
   background-image: url("images/maldives.jpg");
