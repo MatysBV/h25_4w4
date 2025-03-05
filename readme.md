@@ -1,5 +1,5 @@
 # TP1
-## Concevoir un site Wordpress pour un club de voyagge
+## Concevoir un site Wordpress pour un club de voyage
  
 ### Auteur: Matys Voisin
  
