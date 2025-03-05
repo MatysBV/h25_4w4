@@ -140,6 +140,9 @@ Les composants
 .carte__contenu {
   background-color: aliceblue;
 }
+.carte__titre {
+  text-align: center;
+}
 .carte__bouton {
   color: black;
   background-color: rgb(172, 234, 255);
