@@ -141,6 +141,16 @@ Les composants
   background-color: aliceblue;
 }
 
+.post-categories li {
+  background-color: lightblue;
+  border: 2px solid black;
+}
+
+.post-categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
