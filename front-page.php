@@ -4,7 +4,7 @@
 <!-- <h1>------------------ FRONT-PAGE.PHP ------------------</h1> -->
 <!--  -->
 
-<?php $hero_auteur = get_theme_mod('hero_auteur', 'Default title'); ?>
+<?php $hero_auteur = get_theme_mod('hero_auteur', 'Matys Voisin'); ?>
 <?php $hero_background = get_theme_mod('hero_background', ''); ?>
 <?php $hero_couleur = get_theme_mod('hero_couleur', ''); ?>
 
@@ -26,10 +26,7 @@
         </p>
         <button class="hero__inscrire">S'INSCRIRE</button>
         <div class="hero__icone">
-            <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
-            <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
-            <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
-            <img src="https://s2.svgbox.net/social.svg?ic=snapchat&color=000000" width="20" height="20">
+        <?php get_template_part('gabarit/icones'); ?>
         </div>
     </div>
 
