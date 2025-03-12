@@ -8,10 +8,12 @@
     <div class="piedpage">
         <section class="piedpage__s1">
             <div class="piedpage__s1__externe">
+                <h3>Lien sur le voyage</h3>
                 <?php wp_nav_menu(array(
                     "menu" => "externe",
                     "container" => "nav",
                 )); ?>
+            <div class="footer__icone"><?php get_template_part('gabarit/icones'); ?></div>
             </div>
             <div class="piedpage__s1__adresse">
                 <div class="piedpage__s1__adresse__coord">
