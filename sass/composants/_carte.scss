@@ -51,7 +51,7 @@
 }
 
 .post-categories li{
-    background-color: lightblue;
+    background-color: rgb(0, 161, 235);
     border: 2px solid black;
     border-radius: 10%;
     padding: 2px;
@@ -61,4 +61,22 @@
 .post-categories {
     display: flex;
     justify-content: space-evenly;
+}
+
+.post-categories a {
+    color: white;
+}
+
+.carte__contenu {
+    background-color: lightblue;
+    border: 2px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.carte__contenu img{
+    width: 200px;
+    height: auto;
 }

@@ -2,10 +2,10 @@
 
 <?php $footer_adresse = get_theme_mod('footer_adresse', '5800 Sherbrooke-est Montréal (Québec) H1X 2A2'); ?>
 <?php $footer_telephone = get_theme_mod('footer_telephone', '(514-254-7131)'); ?>
-<?php $footer_mission = get_theme_mod('footer_mission', 'Notre mission est de faciliter vos recherche afin de découvrir les plus beaux endroit de la planète.'); ?>
+<?php $footer_mission = get_theme_mod('footer_mission', 'Notre mission est de faciliter vos recherche afin de découvrir les plus beaux endroit de la plan'); ?>
 
 
-    <div class="piedpage global">
+    <div class="piedpage">
         <section class="piedpage__s1">
             <div class="piedpage__s1__externe">
                 <?php wp_nav_menu(array(
