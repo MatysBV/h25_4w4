@@ -3,14 +3,22 @@
 <!--  -->
 <!-- <h1>------------------ FRONT-PAGE.PHP ------------------</h1> -->
 <!--  -->
-<section class="hero">
+
+<?php $hero_auteur = get_theme_mod('hero_auteur', 'Default title'); ?>
+<?php $hero_background = get_theme_mod('hero_background', ''); ?>
+
+
+<section class="hero" style=" background-image: url(<?php echo $hero_background?>);"> 
     <div class="hero__contenu global">
-        <h1 class="hero__titre"><?php bloginfo( 'name' ); ?></h1>
+        <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
+        <p class="hero__auteur">
+            <?php echo $hero_auteur; ?>
+        </p>
         <p class="hero__description">
-        <?php bloginfo( 'description' ); ?>
+            <?php bloginfo('description'); ?>
         </p>
         <p class="hero__courriel">
-        <?php bloginfo( 'admin_email' ); ?>
+            <?php bloginfo('admin_email'); ?>
         </p>
         <p class="hero__adresse">
             5800 Sherbrooke-est - Montréal (Québec) H1X 2A2
@@ -50,7 +58,7 @@
         </form>
     </div>
 
-        <h4 class="galerie__destinationFav">Nos destinations favorites</h4>
+    <h4 class="galerie__destinationFav">Nos destinations favorites</h4>
 
 
 </main>
