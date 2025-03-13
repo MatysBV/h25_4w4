@@ -17,6 +17,7 @@
             </div>
             <div class="piedpage__s1__adresse">
                 <div class="piedpage__s1__adresse__coord">
+                <h3>Informations</h3>
                     <p class="footer_adresse"><?php echo $footer_adresse ?></p>
                     <p class="footer_telephone"><?php echo $footer_telephone ?></p>
                 </div>
@@ -24,6 +25,7 @@
                 <?php get_search_form(); ?>
             </div>
             <div class="piedpage__s1__description">
+            <h3>Notre mission</h3>
                 <p class="footer_mission"><?php echo $footer_mission ?></p>
             </div>
         </section>
