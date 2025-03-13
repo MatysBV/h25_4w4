@@ -167,7 +167,7 @@ Les composants
 }
 
 .carte__contenu {
-  background-color: lightblue;
+  background-color: rgb(255, 106, 126);
   border: 2px solid black;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -283,7 +283,7 @@ main {
     -------------------------- Layout du pied de page --------------------------
 */
 footer {
-  background-color: rgb(223, 127, 10);
+  background-color: rgb(255, 106, 126);
   color: #000;
 }
 
