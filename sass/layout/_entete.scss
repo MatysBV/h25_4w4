@@ -46,7 +46,15 @@
         @media screen and (max-width:800px) {
             display: block;
             z-index: 1000;
+
+            img {
+                transition: transform 0.3s ease;
+            }
         }
+    }
+
+    .entete__check:checked ~ .entete__label img {
+        transform: rotate(90deg);
     }
 
     .entete__check:checked~.entete__navigation {

@@ -21,11 +21,10 @@
                 ?>
             </figure>
 
+            <input type="checkbox" name="menuBurger" id="menuBurger" class="entete__check">
             <label for="menuBurger" class="entete__label">
                 <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32">
             </label>
-            <input type="checkbox" name="menuBurger" id="menuBurger" class="entete__check">
-
 
             <div class="entete__navigation">
                 <?php wp_nav_menu(array(

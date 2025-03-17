@@ -145,13 +145,14 @@ Les composants
 }
 .carte__bouton {
   color: black;
-  background-color: rgb(172, 234, 255);
+  background-color: #f7ebe8;
+  font-weight: bold;
   border: 2px solid black;
   border-radius: 10%;
   padding: 5px;
 }
 .post-categories li {
-  background-color: rgb(0, 161, 235);
+  background-color: #ffa987;
   border: 2px solid black;
   border-radius: 10%;
   padding: 2px;
@@ -160,14 +161,18 @@ Les composants
 .post-categories {
   display: flex;
   justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .post-categories a {
-  color: white;
+  color: #e54b4b;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .carte__contenu {
-  background-color: rgb(255, 106, 126);
+  background-color: #e54b4b;
   border: 2px solid black;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -177,7 +182,8 @@ Les composants
 
 .carte__contenu img {
   width: 200px;
-  height: auto;
+  height: 140px;
+  border: 1px black solid;
 }
 
 /* /////////////////////////////////
@@ -248,6 +254,12 @@ main {
     display: block;
     z-index: 1000;
   }
+  .entete__label img {
+    transition: transform 0.3s ease;
+  }
+}
+.entete .entete__check:checked ~ .entete__label img {
+  transform: rotate(90deg);
 }
 .entete .entete__check:checked ~ .entete__navigation {
   translate: 0 70px;
@@ -283,7 +295,7 @@ main {
     -------------------------- Layout du pied de page --------------------------
 */
 footer {
-  background-color: rgb(255, 106, 126);
+  background-color: #e54b4b;
   color: #000;
 }
 
