@@ -73,12 +73,17 @@
 }
 
 .carte__contenu {
-    background-color: #e54b4bb7;
+    background-color: #fad8d0;
     border: 2px solid black;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 10px;
     text-align: center;
+    min-height: 449px;
+
+    @media screen and (max-width:800px) {
+        min-height: 380px;
+    }
 }
 
 .carte__contenu img{

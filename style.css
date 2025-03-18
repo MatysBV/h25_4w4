@@ -175,12 +175,18 @@ Les composants
 }
 
 .carte__contenu {
-  background-color: rgba(229, 75, 75, 0.7176470588);
+  background-color: #fad8d0;
   border: 2px solid black;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 10px;
   text-align: center;
+  min-height: 449px;
+}
+@media screen and (max-width: 800px) {
+  .carte__contenu {
+    min-height: 380px;
+  }
 }
 
 .carte__contenu img {
@@ -211,8 +217,29 @@ main {
 .populaire .global {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.populaire .global article {
+  padding: 50px;
+  border: 1px solid black;
+  background-color: #f7ebe8;
+}
+
+.populaire .global .single-post img {
+  width: 50vw;
+  height: auto;
+  border: solid black 1px;
+}
+
+.titre-category {
+  text-align: center;
+}
+
+.description-category {
   text-align: center;
 }
 
@@ -220,6 +247,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #f7ebe8;
+  border-bottom: 1px solid black;
 }
 .entete__navigation {
   width: auto;
@@ -240,6 +269,7 @@ main {
     width: 100vw;
     translate: 100% 70px;
     transition: translate 0.3s ease;
+    z-index: 999;
   }
 }
 .entete__logo img {
@@ -306,7 +336,7 @@ main {
   width: 100px;
   height: 30px;
   border-radius: 10px;
-  background-color: #f17979;
+  background-color: #fad8d0;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -325,7 +355,8 @@ main {
     -------------------------- Layout du pied de page --------------------------
 */
 footer {
-  background-color: rgba(229, 75, 75, 0.7176470588);
+  background-color: #f7ebe8;
+  border-top: 1px solid black;
   color: #000;
 }
 

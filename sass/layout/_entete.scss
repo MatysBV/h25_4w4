@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f7ebe8;
+    border-bottom : 1px solid black;
 
     &__navigation {
         @media screen and (max-width: 800px) {
@@ -14,6 +16,7 @@
             width: 100vw;
             translate: 100% 70px;
             transition: translate 0.3s ease;
+            z-index: 999;
         }
 
         width: auto;
