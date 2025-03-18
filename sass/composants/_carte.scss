@@ -35,7 +35,7 @@
     }
 
     &__description {
-
+        font-weight: bold;
     }
 
     &__bouton {
@@ -85,4 +85,8 @@
     width: 200px;
     height: 140px;
     border: 1px black solid;
+}
+
+p {
+    font-weight: bold;
 }

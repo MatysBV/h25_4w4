@@ -143,6 +143,9 @@ Les composants
 .carte__titre {
   text-align: center;
 }
+.carte__description {
+  font-weight: bold;
+}
 .carte__bouton {
   color: black;
   background-color: #f7ebe8;
@@ -184,6 +187,10 @@ Les composants
   width: 200px;
   height: 140px;
   border: 1px black solid;
+}
+
+p {
+  font-weight: bold;
 }
 
 /* /////////////////////////////////
@@ -292,6 +299,15 @@ main {
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.hero__auteur {
+  font-weight: bold;
+}
+.hero__adresse {
+  font-weight: bold;
+}
+.hero__courriel {
+  font-weight: bold;
 }
 
 /*
