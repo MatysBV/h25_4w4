@@ -152,7 +152,7 @@ Les composants
   padding: 5px;
 }
 .post-categories li {
-  background-color: #ffa987;
+  background-color: #f7ebe8;
   border: 2px solid black;
   border-radius: 10%;
   padding: 2px;
@@ -172,7 +172,7 @@ Les composants
 }
 
 .carte__contenu {
-  background-color: #e54b4b;
+  background-color: rgba(229, 75, 75, 0.7176470588);
   border: 2px solid black;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -265,12 +265,15 @@ main {
   translate: 0 70px;
 }
 .entete .menu-principal-container {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 @media screen and (max-width: 800px) {
   .entete .menu-principal-container {
     margin-right: 0;
   }
+}
+.entete .menu {
+  font-weight: bold;
 }
 
 .hero {
@@ -285,7 +288,7 @@ main {
   width: 100px;
   height: 30px;
   border-radius: 10px;
-  background-color: turquoise;
+  background-color: #f17979;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -295,7 +298,7 @@ main {
     -------------------------- Layout du pied de page --------------------------
 */
 footer {
-  background-color: #e54b4b;
+  background-color: rgba(229, 75, 75, 0.7176470588);
   color: #000;
 }
 
@@ -306,18 +309,30 @@ footer {
 .piedpage__s1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1%;
 }
 .piedpage__s1__externe {
-  flex: 0 0 20%;
+  flex: 0 0 33%;
 }
 .piedpage__s1__externe .menu {
   display: flex;
   flex-direction: column;
+  padding-left: 0;
+  font-weight: bold;
 }
 .piedpage__s1__adresse {
-  flex: 0 0 40%;
+  flex: 0 0 33%;
+}
+.piedpage__s1__adresse__coord {
+  font-weight: bold;
+}
+.piedpage__s1__adresse__recherche {
+  display: flex;
+  justify-content: center;
 }
 .piedpage__s1__description {
-  flex: 1 0 400px;
+  flex: 1 0 33%;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

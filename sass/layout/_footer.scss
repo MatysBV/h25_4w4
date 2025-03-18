@@ -3,7 +3,7 @@
 */
 
 footer {
-    background-color: #e54b4b;
+    background-color: #e54b4bb7;
     color: #000;
 }
 
@@ -13,21 +13,33 @@ footer {
     &__s1{
         display: flex;
         flex-wrap: wrap;
-        gap: 3rem;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 1%;
         &__externe{
-            flex: 0 0 20%;
+            flex: 0 0 33%;
             & .menu{//ul
                 display: flex;
-                flex-direction: column;    
+                flex-direction: column; 
+                padding-left: 0; 
+                font-weight: bold;  
             }
+            
+            
         }
         &__adresse{
-            flex: 0 0 40%;
-            &__coord{}
-            &__recherche{}
+            flex: 0 0 33%;
+            &__coord{
+                font-weight: bold;
+            }
+            &__recherche{
+                display: flex;
+                justify-content: center;
+            }
         }
         &__description{
-            flex: 1 0 400px;
+            flex: 1 0 33%;
+            font-weight: bold;
         }
     }
 }

@@ -21,8 +21,9 @@
                     <p class="footer_adresse"><?php echo $footer_adresse ?></p>
                     <p class="footer_telephone"><?php echo $footer_telephone ?></p>
                 </div>
-                <div class="piedpage__s1__adresse__recherche"></div>
+                <div class="piedpage__s1__adresse__recherche">
                 <?php get_search_form(); ?>
+                </div>
             </div>
             <div class="piedpage__s1__description">
             <h3>Notre mission</h3>
