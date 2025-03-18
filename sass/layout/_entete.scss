@@ -72,4 +72,14 @@
     .menu {
         font-weight: bold;
     }
+
+    .entete__logo {
+        display: flex;
+        align-items: center;
+        
+        @media screen and (max-width: 800px) {
+            justify-content: center;
+            width: 100%;
+        }
+    }
 }

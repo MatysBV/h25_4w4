@@ -283,6 +283,16 @@ main {
 .entete .menu {
   font-weight: bold;
 }
+.entete .entete__logo {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .entete .entete__logo {
+    justify-content: center;
+    width: 100%;
+  }
+}
 
 .hero {
   background-image: url("images/maldives.jpg");
