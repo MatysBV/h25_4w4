@@ -114,7 +114,7 @@ Les composants
   gap: 20px;
   border: 2px solid black;
   box-shadow: 0 0 15px black;
-  background-color: white;
+  background-color: #f7ebe8;
   padding: 25px 61px;
   text-transform: capitalize;
 }
@@ -237,10 +237,15 @@ main {
 
 .titre-category {
   text-align: center;
+  background-color: #f7ebe8;
+  border: solid black 1px;
 }
 
 .description-category {
   text-align: center;
+  background-color: #f7ebe8;
+  padding: 2%;
+  border: solid black 1px;
 }
 
 .entete {
