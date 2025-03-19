@@ -13,7 +13,7 @@ get_header();
         $search_query = get_search_query();
         ?>
         <h2>Résultats de recherche pour : "<?php echo esc_html($search_query); ?>"</h2>
-        <p><?php echo $total_results; ?> résultat(s) trouvé(s)</p>
+        <p class="total-resultat"><?php echo $total_results; ?> résultat(s) trouvé(s)</p>
 
         <!-- Liste des résultats -->
         <?php if (have_posts()) : ?>

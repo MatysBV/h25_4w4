@@ -23,6 +23,11 @@ main {
     text-align: center;
 }
 
+
+/*
+    -------------------------- Layout général pour les single-post --------------------------
+*/
+
 .populaire .global article{
     padding: 50px;
     border: 1px solid black;
@@ -46,4 +51,59 @@ main {
     background-color: #f7ebe8;
     padding: 2%;
     border: solid black 1px;
+}
+
+
+/*
+    -------------------------- Layout général pour les résultats de recherche --------------------------
+*/
+
+section.recherche__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.recherche__section h2 {
+    text-align: center;
+    background-color: #f7ebe8;
+    border: solid black 1px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section.recherche__section .total-resultat{
+    padding: 10px;
+    background-color: #e54b4b;
+    border-radius: 10px;
+}
+
+section.recherche__section article{
+    background-color: #fad8d0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+}
+
+section.recherche__section article h5{
+    text-align: center;
+}
+
+section.recherche__section article h5 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    background-color: #f7ebe8;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.recherche__aucun-resultat h3{
+    text-align: center;
+    background-color: #f7ebe8;
+    border: solid black 1px;
+    padding: 20px;
+    border-radius: 10px;
 }
