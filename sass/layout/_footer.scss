@@ -6,6 +6,11 @@ footer {
     background-color: #f7ebe8;
     border-top: 1px solid black;
     color: #000;
+    
+    @media screen and (max-width:800px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .piedpage {
@@ -17,6 +22,12 @@ footer {
         justify-content: space-evenly;
         text-align: center;
         padding: 1%;
+
+        @media screen and (max-width:800px) {
+            display: flex;
+            flex-direction: column;
+        }
+
         &__externe{
             flex: 0 0 33%;
             & .menu{//ul
@@ -26,7 +37,11 @@ footer {
                 font-weight: bold;  
             }
             
-            
+            @media screen and (max-width:800px) {
+                display: flex;
+                flex-direction: column;
+                order: 3;
+            }
         }
         &__adresse{
             flex: 0 0 33%;
@@ -37,10 +52,22 @@ footer {
                 display: flex;
                 justify-content: center;
             }
+
+            @media screen and (max-width:800px) {
+                display: flex;
+                flex-direction: column;
+                order: 1;
+            }
         }
         &__description{
             flex: 1 0 33%;
             font-weight: bold;
+
+            @media screen and (max-width:800px) {
+                display: flex;
+                flex-direction: column;
+                order: 2;
+            }
         }
     }
 }

@@ -18,9 +18,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* /////////////////////////////////
 Les variables
 //////////////////////////////////// */
+/*
+    -------------------------- Variables général du site --------------------------
+*/
 /* /////////////////////////////////
 Les balise de bases
 //////////////////////////////////// */
+/*
+    -------------------------- Base simple du site --------------------------
+*/
 body {
   font-size: 16px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -57,7 +63,9 @@ p {
 /* /////////////////////////////////
 Les composants
 //////////////////////////////////// */
-/* ----------------------------------------- .menu */
+/*
+    -------------------------- Composant du menu --------------------------
+*/
 .menu {
   display: flex;
   flex-direction: row;
@@ -79,11 +87,15 @@ Les composants
   margin-right: 20px;
 }
 
+/*
+    -------------------------- Composant de la barre de recherche --------------------------
+*/
 .recherche {
   display: flex;
   height: 1.6rem;
   width: 14rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
 }
 .recherche__input {
   border: none;
@@ -99,11 +111,19 @@ Les composants
   color: rgba(0, 0, 0, 0.2);
   font-style: italic;
 }
+.recherche__bouton {
+  background-color: transparent;
+  border: none;
+  border-radius: 0 30px 30px 0;
+}
 .recherche__img {
   flex: 0 0 20px;
   padding: 3px;
 }
 
+/*
+    -------------------------- Composant du formulaire --------------------------
+*/
 .formulaire {
   position: relative;
   bottom: 50px;
@@ -125,7 +145,9 @@ Les composants
   }
 }
 
-/*--------------------------------------------*/
+/*
+    -------------------------- Composant des cartes --------------------------
+*/
 .carte {
   display: flex;
   flex-direction: column;
@@ -154,6 +176,7 @@ Les composants
   border-radius: 10%;
   padding: 5px;
 }
+
 .post-categories li {
   background-color: #f7ebe8;
   border: 2px solid black;
@@ -202,6 +225,9 @@ p {
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
+/*
+    -------------------------- Layout général --------------------------
+*/
 .global {
   max-width: 900px;
   padding: 10vh 5vw;
@@ -248,6 +274,9 @@ main {
   border: solid black 1px;
 }
 
+/*
+    -------------------------- Layout de l'entete --------------------------
+*/
 .entete {
   display: flex;
   justify-content: space-between;
@@ -329,6 +358,12 @@ main {
   }
 }
 
+/*
+    -------------------------- Layout de la galerie --------------------------
+*/
+/*
+    -------------------------- Layout du héro --------------------------
+*/
 .hero {
   background-image: url("images/maldives.jpg");
   min-height: 100vh;
@@ -364,6 +399,12 @@ footer {
   border-top: 1px solid black;
   color: #000;
 }
+@media screen and (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .piedpage {
   display: flex;
@@ -376,6 +417,12 @@ footer {
   text-align: center;
   padding: 1%;
 }
+@media screen and (max-width: 800px) {
+  .piedpage__s1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .piedpage__s1__externe {
   flex: 0 0 33%;
 }
@@ -384,6 +431,13 @@ footer {
   flex-direction: column;
   padding-left: 0;
   font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .piedpage__s1__externe {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+  }
 }
 .piedpage__s1__adresse {
   flex: 0 0 33%;
@@ -395,7 +449,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 800px) {
+  .piedpage__s1__adresse {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+}
 .piedpage__s1__description {
   flex: 1 0 33%;
   font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .piedpage__s1__description {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
 }/*# sourceMappingURL=style.css.map */

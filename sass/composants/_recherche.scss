@@ -1,8 +1,12 @@
+/*
+    -------------------------- Composant de la barre de recherche --------------------------
+*/
 .recherche{
     display:flex;
     height: 1.6rem;
     width : 14rem;
     border: 1px solid  rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
 
 // le & prend la valeur du sélecteur parent 
     &__input{
@@ -20,12 +24,14 @@
         }
 
     }
+    &__bouton {
+        background-color: transparent;
+        border: none;
+        border-radius: 0 30px 30px 0;
+    }
     
     &__img{
         flex: 0 0 20px; 
         padding : 3px;
-
-
-
     }
 }
