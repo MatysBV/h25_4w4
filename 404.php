@@ -2,7 +2,7 @@
     <img src="" alt="" srcset="">
 </div>
 
-<div class="error404">
+<div class="erreur-404">
     <h1>404</h1>
     <p> OOPS! PAGE NOT FOUND</p>
     <?php get_search_form(); ?>
