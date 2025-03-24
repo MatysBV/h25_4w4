@@ -1,2 +1,12 @@
-<h1>--------------- ERROR 404 ---------------</h1>
-<h2>dsadsasdaasdsa</h2>
+
+<div class="img-Error404-Background">
+    <img src="" alt="" srcset="">
+</div>
+
+<div class="error404"> 
+    <h1>404</h1>
+    <p> OOPS! PAGE NOT FOUND</p>
+    <?php get_search_form(); ?>
+    <div class="error404__icone"><?php get_template_part('gabarit/icones'); ?></div>
+    <p><a href="<?php echo get_home_url(); ?>"  class="error404__menu">Retourner à l'accueil</a></p>
+</div>
