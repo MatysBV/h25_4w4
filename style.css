@@ -522,4 +522,14 @@ footer {
     flex-direction: column;
     order: 2;
   }
+}
+
+/*
+    -------------------------- Layout de la page Error 404 --------------------------
+*/
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fad8d0;
 }/*# sourceMappingURL=style.css.map */
