@@ -551,10 +551,15 @@ footer {
   background: rgba(255, 255, 255, 0.4);
   margin-bottom: 30px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 600px) and (max-width: 1100px) {
   .error404__titre {
     font-size: 5rem;
     max-width: 60vw;
+  }
+}
+@media screen and (max-width: 599px) {
+  .error404__titre {
+    font-size: 3rem;
   }
 }
 
@@ -566,7 +571,7 @@ footer {
   background: rgba(255, 255, 255, 0.4);
   margin-bottom: 30px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 600px) and (max-width: 1100px) {
   .error404_description {
     max-width: 60vw;
   }
@@ -580,9 +585,14 @@ footer {
   border-radius: 10px;
   color: blue;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 600px) and (max-width: 1100px) {
   .error404__RetourMenu {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .error404__RetourMenu {
+    font-size: 2rem;
   }
 }
 
@@ -594,6 +604,12 @@ footer {
   gap: 10px;
   padding-left: 0;
 }
+@media screen and (max-width: 800px) {
+  .menu-404error ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .menu-404error li {
   background-color: rgba(0, 151, 245, 0.4);
@@ -601,9 +617,14 @@ footer {
   padding: 20px;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 600px) and (max-width: 1100px) {
   .menu-404error li {
     padding: 15px 20px 15px 20px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .menu-404error li {
+    font-size: 15px;
   }
 }
 
