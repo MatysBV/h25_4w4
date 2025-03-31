@@ -531,4 +531,8 @@ footer {
   min-width: 100vw;
   min-height: 100vh;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
