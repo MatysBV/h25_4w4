@@ -9,7 +9,7 @@
     <div class="section_404_texte">
         <?php get_template_part('gabarit/error404'); ?>
 
-        <p><a href="<?php echo get_home_url(); ?>" class="error404__RetourMenu">Retourner à l'accueil</a></p>
+        <p><a href="<?php echo get_home_url(); ?>" class="error404__RetourMenu">Retour à l'accueil</a></p>
     </div>
 
     <div class="menu-404error">
