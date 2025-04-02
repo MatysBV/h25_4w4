@@ -26,8 +26,6 @@ foreach ($sous_categories as $categorie) {
 }
 echo '</ul>';
  
-echo 'La catégorie "' . esc_html($parent_slug) . '" n\'existe pas.';
- 
 }
  
 ?>
