@@ -1,50 +1,35 @@
-(function(){
-    console.log("destination.js");
-    const categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
+const categorie__ul__li = document.querySelectorAll(".categorie__ul__li");
+const categoryTitre = document.querySelector(".destination__titre");
+
+categoryTitre.innerHTML = "";
+
+for (const element of categorie__ul__li) {
+    element.addEventListener("click", fetchStuff)
+}
+
+function fetchStuff(event) {
+    console.log(event.target);
+
+    const categoryId = event.target.getAttribute("data-categoryID"); // Remplacez par l'ID de la catégorie souhaitée
     const domaine = window.location.href;
-    const apiUrl = `${domaine}/wp-json/wp/v2/posts?categories=${categoryId}`;
-    console.log(apiUrl);
- 
-    function parcourir_bouton(){
-        const categorie__ul__li = document.querySelectorAll(".categorie__ul__li");
-        categorie__ul__li.forEach(elm => {
-            elm.addEventListener('click', (e) => {
-                // Empêche l'événement de propagation si nécessaire
-                e.preventDefault();
- 
-                // Logique de filtrage selon la catégorie ou une action spécifique
-                const categorieId = e.target.dataset.categoryId;
-                console.log(`Catégorie cliquée: ${categorieId}`);
-               
-                // Pour l'exemple, je recharge la liste des articles selon la catégorie
-                fetchArticles(categorieId);
+    const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
+    console.log(`Selected category = ${event.target.innerHTML}`);
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            categoryTitre.innerHTML = `Articles de la section ${(event.target.innerHTML).toLowerCase()}`
+            const destinationList = document.querySelector('.destination__list');
+            destinationList.innerHTML = "";
+            data.forEach(article => {
+                const articleElement = document.createElement('div');
+                articleElement.innerHTML = `
+                    <h3>${article.title.rendered}</h3>
+                    <div>${article.excerpt.rendered}</div>
+                    <a href="${article.link}">Lire plus</a>
+                `;
+                destinationList.appendChild(articleElement);
             });
-        });
-    }
- 
-    function fetchArticles(categoryId) {
-        const apiUrl = `${domaine}/wp-json/wp/v2/posts?categories=${categoryId}`;
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                const destinationList = document.querySelector('.destination__list');
-                destinationList.innerHTML = ''; // Réinitialiser la liste des destinations
- 
-                data.forEach(article => {
-                    const articleElement = document.createElement('div');
-                    articleElement.innerHTML = `
-                        <h3>${article.title.rendered}</h3>
-                        <a href="${article.link}">Lire plus</a>
-                    `;
-                    destinationList.appendChild(articleElement);
-                });
-            })
-            .catch(error => console.error('Erreur lors de la récupération des articles:', error));
-    }
- 
-    // Charger les articles au chargement de la page
-    fetchArticles(categoryId);
- 
-    // Activer les événements de clic sur les boutons ou liens de catégories
-    parcourir_bouton();
-})();
+        })
+        .catch(error => console.error('Erreur lors de la récupération des articles:', error));
+}
