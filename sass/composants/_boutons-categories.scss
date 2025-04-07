@@ -35,8 +35,19 @@
     justify-content: center;
     width: 60%;
 
+    div {
+        background-color: #fad8d0;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
     h3 {
-        color: red;
+        color: black;
         text-align: center;
+    }
+
+    p {
+        color: black;
     }
 }

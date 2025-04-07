@@ -256,9 +256,18 @@ p {
   justify-content: center;
   width: 60%;
 }
+.destination__list div {
+  background-color: #fad8d0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
 .destination__list h3 {
-  color: red;
+  color: black;
   text-align: center;
+}
+.destination__list p {
+  color: black;
 }
 
 /* /////////////////////////////////
