@@ -232,6 +232,7 @@ p {
 .destination__titre {
   color: black;
   text-align: center;
+  text-decoration: underline;
 }
 
 .categorie__ul {
