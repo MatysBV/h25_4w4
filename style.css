@@ -263,6 +263,13 @@ p {
   padding: 10px;
   border-radius: 10px;
 }
+.destination__list div a {
+  background-color: #f7ebe8;
+  padding: 5px;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+}
 .destination__list h3 {
   color: black;
   text-align: center;
