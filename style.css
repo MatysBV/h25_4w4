@@ -229,12 +229,17 @@ p {
   align-items: center;
   flex-direction: column;
 }
+.destination__titre {
+  color: black;
+  text-align: center;
+}
 
 .categorie__ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
   gap: 30px;
+  padding: 0;
 }
 .categorie__ul__li {
   padding: 10px;
@@ -251,9 +256,8 @@ p {
   justify-content: center;
   width: 60%;
 }
-
-.destination__titre {
-  color: black;
+.destination__list h3 {
+  color: red;
   text-align: center;
 }
 

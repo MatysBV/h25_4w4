@@ -4,6 +4,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    &__titre {
+        color: black;
+        text-align: center;
+    }
 }
 
 .categorie__ul {
@@ -11,6 +16,7 @@
     list-style-type: none;
     justify-content: center;
     gap: 30px;
+    padding: 0;
     &__li {
         padding: 10px;
         font-size: 1rem;
@@ -28,9 +34,9 @@
     align-items: center;
     justify-content: center;
     width: 60%;
-}
 
-.destination__titre {
-    color: black;
-    text-align: center;
+    h3 {
+        color: red;
+        text-align: center;
+    }
 }
