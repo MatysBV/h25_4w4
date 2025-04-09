@@ -18,7 +18,7 @@ function fetchStuff(event) {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            categoryTitre.innerHTML = `Articles de la section ${(event.target.innerHTML).toLowerCase()}`
+            categoryTitre.innerHTML = `Articles de la section : ${(event.target.innerHTML).toLowerCase()}`
             const destinationList = document.querySelector('.destination__list');
             destinationList.innerHTML = "";
             data.forEach(article => {
