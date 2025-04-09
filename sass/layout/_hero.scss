@@ -2,9 +2,17 @@
     -------------------------- Layout du héro --------------------------
 */
 .hero{
-    background-image: url("images/maldives.jpg");
+    position: relative;
     min-height: 100vh;
-    background-size: cover;
+
+    &__carrousel{
+        position: absolute;
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
 
     &__inscrire {
         display: flex;

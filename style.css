@@ -477,9 +477,16 @@ section.recherche__section article h5 a {
     -------------------------- Layout du héro --------------------------
 */
 .hero {
-  background-image: url("images/maldives.jpg");
+  position: relative;
   min-height: 100vh;
+}
+.hero__carrousel {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
   background-size: cover;
+  z-index: -1;
 }
 .hero__inscrire {
   display: flex;

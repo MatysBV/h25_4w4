@@ -3,20 +3,9 @@
 <!--  -->
 <!-- <h1>------------------ FRONT-PAGE.PHP ------------------</h1> -->
 <!--  -->
-<?php $hero_background = get_theme_mod('hero_background', ''); ?>
-<?php $hero_couleur = get_theme_mod('hero_couleur', ''); ?>
 
+<?php get_template_part('gabarit/hero'); ?>
 
-<section class="hero" style=" background-image: url(<?php echo $hero_background?>); color : <?php echo $hero_couleur ?>">  
-    <div class="hero__contenu global">
-    <?php get_template_part('gabarit/hero'); ?>
-        <button class="hero__inscrire">S'INSCRIRE</button>
-        <div class="hero__icone">
-        <?php get_template_part('gabarit/icones'); ?>
-        </div>
-    </div>
-
-</section>
 <main>
     <div class="formulaire">
         <form class="formulaire__form">

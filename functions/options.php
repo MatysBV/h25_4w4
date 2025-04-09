@@ -28,6 +28,15 @@ function theme_4w4_enqueue_styles(){
             true
         );
 
+        wp_enqueue_script(
+            'carrousel',
+            get_template_directory_uri() . '/js/carrousel.js',
+            array(),
+            filemtime(get_template_directory() . 
+            '/js/carrousel.js'),
+            true
+        );
+
 }
 /*
 */

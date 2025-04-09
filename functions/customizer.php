@@ -27,16 +27,20 @@ function theme_tp_customize_register($wp_customize)
 
     ################## IMAGE BACKGROUND HERO ##################
     // Ajout donnee  (changement background)
-    $wp_customize->add_setting('hero_background', array(
+
+    for ($k = 0; $k<3 ; $k++) {
+    $wp_customize->add_setting('hero_background_' .$k , array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
     ));
+    
 
     // Controle donnee  (image background)
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
-        'label' => __('Image background', 'theme_tp'),
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_' . $k, array(
+        'label' => __('Image background' .($k+1) , 'theme_tp'),
         'section' => 'hero_section',
     )));
+}
 
     ///////////////////// ajout du contrôle des couleurs de texte dans le hero
     $wp_customize->add_setting('hero_couleur', array(
