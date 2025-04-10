@@ -249,6 +249,11 @@ p {
   border: 1px solid #aaa;
   border-radius: 5px;
 }
+.categorie__ul__li:hover {
+  background-color: #f7b9ab;
+  transform: scale(1.05);
+  cursor: pointer;
+}
 
 .destination__list {
   display: flex;
@@ -269,6 +274,7 @@ p {
   color: black;
   border: 1px solid black;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 .destination__list h3 {
   color: black;
@@ -276,6 +282,20 @@ p {
 }
 .destination__list p {
   color: black;
+}
+
+.destination__texte {
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s ease;
+  display: block;
+}
+
+.destination__texte.active {
+  max-height: 500px;
+  opacity: 1;
 }
 
 /* /////////////////////////////////
