@@ -34,7 +34,7 @@ function fetchStuff(event) {
                 const link = articleElement.querySelector('a');
 
                 excerpt.classList.add('destination__texte'); // ajoute la classe pour l'effet
-                link.style.display = 'none';
+                link.classList.add('destination__link'); //meme chose ajout d'une classe pour l'effet
 
                 const toggleButton = document.createElement('button');
                 toggleButton.textContent = '...';
@@ -42,7 +42,8 @@ function fetchStuff(event) {
 
                 toggleButton.addEventListener('click', () => {
                     excerpt.classList.toggle('active');
-                    link.style.display = excerpt.classList.contains('active') ? 'inline' : 'none';
+                    link.classList.toggle('active');
+
                 });
 
                 articleElement.insertBefore(toggleButton, excerpt);

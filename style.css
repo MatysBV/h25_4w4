@@ -298,6 +298,18 @@ p {
   opacity: 1;
 }
 
+.destination__link {
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.destination__link.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
