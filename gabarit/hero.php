@@ -35,4 +35,10 @@ for ($k = 0; $k < 3; $k++) {
         </div>
     </div>
 
+    <div class="hero__radio">
+        <input type="radio" name="carrousel" id="">
+        <input type="radio" name="carrousel" id="">
+        <input type="radio" name="carrousel" id="">
+    </div>
+
 </section>

@@ -520,6 +520,14 @@ section.recherche__section article h5 a {
   background-size: cover;
   z-index: -1;
 }
+.hero__radio {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
 .hero__inscrire {
   display: flex;
   align-items: center;
