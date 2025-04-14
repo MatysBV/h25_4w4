@@ -1,3 +1,38 @@
 (function(){
-    console.log("carrousel.js")
-})()
+    console.log("caroussel.js")
+    let hero__radio__input = document.querySelectorAll(".hero__radio__input")
+    let hero__caroussels = document.querySelectorAll(".hero__caroussel");
+ 
+    console.log("hero__radio__input.length : ",hero__radio__input.length);
+ 
+    let indexActuel = 0;
+    const total = hero__radio__input.length;
+ 
+    function changementAutomatique(index){
+        hero__radio__input[index].checked = true;
+ 
+        // Supprime "active" de toutes les caroussels
+        hero__caroussels.forEach(c => c.classList.remove("active"));
+ 
+        // Ajoute "active" au carrousel qui dois etre actif 
+        if (hero__caroussels[index]) {
+            hero__caroussels[index].classList.add("active");
+        }
+    }
+    changementAutomatique(indexActuel);
+ 
+    // Change toutes les 5 secondes
+    setInterval(() => {
+        indexActuel = (indexActuel + 1) % total;
+        changementAutomatique(indexActuel);
+    }, 5000);
+ 
+    // change le fond lorsque l'on clique sur un bouton radio
+    hero__radio__input.forEach((radio, index) => {
+        radio.addEventListener('change', () => {
+            indexActuel = index;
+            changementAutomatique(index);
+        });
+    });
+ 
+})();
