@@ -27,5 +27,18 @@ foreach ($sous_categories as $categorie) {
 echo '</ul>';
  
 }
- 
-?>
+
+// Permet de générer une ou plusieurs vagues en format SVG
+function genere_vague() {?>
+
+<svg class="waveFooter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+  <path fill="#fad8d0" fill-opacity="1">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="
+        M0,160L80,133.3C160,107,320,53,480,37.3C640,21,800,43,960,48C1120,53,1280,43,1360,37.3L1440,32L1440,320L0,320Z;
+        M0,180L80,153.3C160,127,320,73,480,57.3C640,41,800,63,960,68C1120,73,1280,63,1360,57.3L1440,52L1440,320L0,320Z;
+        M0,160L80,133.3C160,107,320,53,480,37.3C640,21,800,43,960,48C1120,53,1280,43,1360,37.3L1440,32L1440,320L0,320Z" />
+  </path>
+</svg>
+
+<?php }
