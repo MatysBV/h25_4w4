@@ -53,6 +53,13 @@ function theme_tp_customize_register($wp_customize)
         'label' => __('sélection de la couleur', 'theme_tp'),
         'section' => 'hero_section',
     )));
+    
+    
+    ################## NOMBRE IMAGE BACKGROUND HERO CAROUSSEL ##################
+    ///////////////////// ajout du contrôle du nombre d'images qui peuvent etre choisie pour le caroussel
+
+
+
 
 
 
@@ -96,13 +103,13 @@ function theme_tp_customize_register($wp_customize)
         'type' => 'text',
     ));
 
-        ///////////////////// ajout du contrôle des couleurs de texte dans le hero
+        ///////////////////// ajout du contrôle des couleurs de texte dans le footer
         $wp_customize->add_setting('footer_couleur', array(
             'default' => '',
             'sanitize_callback' => 'esc_url_raw',
         ));
     
-        // Controle donnee  (changement de couleur dans le hero)
+        // Controle donnee  (changement de couleur dans le footer)
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_couleur', array(
             'label' => __('sélection de la couleur', 'theme_tp'),
             'section' => 'footer_section',
