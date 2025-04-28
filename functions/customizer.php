@@ -25,22 +25,7 @@ function theme_tp_customize_register($wp_customize)
     ));
 
 
-    ################## IMAGE BACKGROUND HERO ##################
-    // Ajout donnee  (changement background)
-
-    for ($k = 0; $k<3 ; $k++) {
-    $wp_customize->add_setting('hero_background_' .$k , array(
-        'default' => '',
-        'sanitize_callback' => 'esc_url_raw',
-    ));
-    
-
-    // Controle donnee  (image background)
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_' . $k, array(
-        'label' => __('Image background' .($k+1) , 'theme_tp'),
-        'section' => 'hero_section',
-    )));
-}
+    ################## CHOIX DE LA COULEUR DU TEXTE DANS LA SECTION HERO ##################
 
     ///////////////////// ajout du contrôle des couleurs de texte dans le hero
     $wp_customize->add_setting('hero_couleur', array(
@@ -53,14 +38,40 @@ function theme_tp_customize_register($wp_customize)
         'label' => __('sélection de la couleur', 'theme_tp'),
         'section' => 'hero_section',
     )));
-    
-    
-    ################## NOMBRE IMAGE BACKGROUND HERO CAROUSSEL ##################
-    ///////////////////// ajout du contrôle du nombre d'images qui peuvent etre choisie pour le caroussel
+
+
+    ################## NOMBRE D'IMAGES BACKGROUND HERO CAROUSSEL ##################
+
+    $wp_customize->add_setting('hero_nombre_images_caroussel', array(
+        'default' => 3,
+        'sanitize_callback' => 'absint',
+    ));
+    $wp_customize->add_control('hero_nombre_images_caroussel', array(
+        'label' => __('Nombre d’images dans le carrousel', 'theme_tp'),
+        'section' => 'hero_section',
+        'type' => 'number',
+    ));
 
 
 
+    ################## IMAGE BACKGROUND HERO ##################
+    // Ajout donnee  (changement background)
 
+    $NombreImagesCaroussel =  get_theme_mod("hero_nombre_images_caroussel", "1");
+
+    for ($k = 0; $k < $NombreImagesCaroussel; $k++) {
+        $wp_customize->add_setting('hero_background_' . $k, array(
+            'default' => '',
+            'sanitize_callback' => 'esc_url_raw',
+        ));
+
+
+        // Controle donnee  (image background)
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_' . $k, array(
+            'label' => __('Image background' . ($k + 1), 'theme_tp'),
+            'section' => 'hero_section',
+        )));
+    }
 
 
     ####################### FOOTER #######################
@@ -103,18 +114,18 @@ function theme_tp_customize_register($wp_customize)
         'type' => 'text',
     ));
 
-        ///////////////////// ajout du contrôle des couleurs de texte dans le footer
-        $wp_customize->add_setting('footer_couleur', array(
-            'default' => '',
-            'sanitize_callback' => 'esc_url_raw',
-        ));
-    
-        // Controle donnee  (changement de couleur dans le footer)
-        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_couleur', array(
-            'label' => __('sélection de la couleur', 'theme_tp'),
-            'section' => 'footer_section',
-        )));
-    
+    ///////////////////// ajout du contrôle des couleurs de texte dans le footer
+    $wp_customize->add_setting('footer_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Controle donnee  (changement de couleur dans le footer)
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_couleur', array(
+        'label' => __('sélection de la couleur', 'theme_tp'),
+        'section' => 'footer_section',
+    )));
+
 
 
 
@@ -163,19 +174,17 @@ function theme_tp_customize_register($wp_customize)
         'label' => __('sélection de la couleur', 'theme_tp'),
         'section' => '404_section',
     )));
-    
-        //////////////////////  ajout de la donnée (description 404)
-        $wp_customize->add_setting('404_description', array(
-            'default' => __('Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, nostrum sint deserunt architecto dolorem nisi delectus pariatur odit eius! Maiores dolore provident soluta culpa minus nesciunt doloremque vero incidunt accusamus!', 'theme_tp'),
-            'sanitize_callback' => 'sanitize_text_field'
-        ));
-        ///////////////////// ajout du contrôle de la donnée (description 404)
-        $wp_customize->add_control('404_description', array(
-            'label' => __('description', 'theme_tp'),
-            'section' => '404_section',
-            'type' => 'text',
-        ));
-    
 
+    //////////////////////  ajout de la donnée (description 404)
+    $wp_customize->add_setting('404_description', array(
+        'default' => __('Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, nostrum sint deserunt architecto dolorem nisi delectus pariatur odit eius! Maiores dolore provident soluta culpa minus nesciunt doloremque vero incidunt accusamus!', 'theme_tp'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    ///////////////////// ajout du contrôle de la donnée (description 404)
+    $wp_customize->add_control('404_description', array(
+        'label' => __('description', 'theme_tp'),
+        'section' => '404_section',
+        'type' => 'text',
+    ));
 }
 add_action('customize_register', 'theme_tp_customize_register');

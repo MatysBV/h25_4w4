@@ -1,5 +1,6 @@
 <?php $hero_auteur = get_theme_mod('hero_auteur', 'Matys Voisin'); ?>
 <?php $hero_couleur = get_theme_mod('hero_couleur', ''); ?>
+<?php $NombreImagesCaroussel =  get_theme_mod("hero_nombre_images_caroussel", "1"); ?>
 
 <?php
 for ($k = 0; $k < 3; $k++) {
@@ -7,16 +8,35 @@ for ($k = 0; $k < 3; $k++) {
 }
 ?>
 
+<!-- affiche dynamiquement les images du caroussel -->
 <section class="hero" style=" color : <?php echo $hero_couleur ?>;">
+    <?php
+    $NombreImagesCaroussel =  get_theme_mod("hero_nombre_images_caroussel", "1");
 
-    <div class="hero__caroussel" style="background-image: url(<?php echo $hero_background[0]; ?>);"></div>
-    <div class="hero__caroussel" style="background-image: url(<?php echo $hero_background[1]; ?>);"></div>
-    <div class="hero__caroussel" style="background-image: url(<?php echo $hero_background[2]; ?>);"></div>
+    for ($k = 0; $k < $NombreImagesCaroussel; $k++) {
+    ?>
+        <div class="hero__caroussel" style="background-image: url(<?php echo $hero_background[$k]; ?>);"></div>
 
+    <?php
+    }
+
+    ?>
+
+    <!-- affiche dynamiquement les boutons radio -->
     <div class="hero__radio">
-        <input class= "hero__radio__input" data-id_radio="0" type="radio" name="caroussel" id="" checked= "checked">
-        <input class= "hero__radio__input" data-id_radio="1" type="radio" name="caroussel" id="">
-        <input class= "hero__radio__input" data-id_radio="2" type="radio" name="caroussel" id="">
+ 
+        <?php
+        for ($k = 0; $k < $NombreImagesCaroussel; $k++) {
+            if ($k == 0) {
+        ?>
+ 
+            <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" type="radio" name="carrousel" checked>
+ 
+        <?php } else { ?>
+            <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" type="radio" name="carrousel">
+        <?php } ?>
+ 
+        <?php } ?>
     </div>
 
     <div class="hero__contenu global">
