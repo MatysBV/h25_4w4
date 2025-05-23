@@ -17,6 +17,11 @@
                         <p>Température maximum : <?php the_field('temperature_maximum') ?>°C</p>
                         <p>Température minimum : <?php the_field('temperature_minimum') ?>°C</p>
                         <p>Température moyenne : <?php the_field('temperature_moyenne') ?>°C</p>
+
+                        <div class="InfoPubli">
+                            <p>Auteur(e) : <?php the_author(); ?></p>
+                            <p>Date de publication : <?php the_date(); ?></p>
+                        </div>
                     </article>
             <?php endwhile;
             endif; ?>
