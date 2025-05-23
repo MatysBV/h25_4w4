@@ -282,6 +282,28 @@ function theme_tp_customize_register($wp_customize)
         'section' => '404_section',
         'type' => 'text',
     ));
+
+
+
+
+            ///////////////////// ajout de la section pour la page du template-pays.php
+    $wp_customize->add_section('section_Template-Pays', array(
+        'title' => __('section_Template-Pays', 'theme_tp'),
+        'priority' => 30,
+    ));
+
+        ///////////////////// ajout du contrôle des couleurs de la vague dans le TEMPLATE-PAYS
+        $wp_customize->add_setting('Vague-Template-Pays', array(
+            'default' => '',
+            'sanitize_callback' => 'esc_url_raw',
+        ));
+    
+        // Controle donnee  (changement de couleur de la vague dans le TEMPLATE-PAYS)
+        $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'Vague-Template-Pays', array(
+            'label' => __('sélection de la couleur de la vague', 'theme_tp'),
+            'section' => 'section_Template-Pays',
+        )));
+    
 }
 
 add_action('customize_register', 'theme_tp_customize_register');
