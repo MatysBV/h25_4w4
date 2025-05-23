@@ -65,6 +65,8 @@ footer {
 
             &__img{
                 max-width: 20vw;
+                border: 1px solid black;
+                border-radius: 10px;
             }
 
             @media screen and (max-width:800px) {

@@ -32,6 +32,7 @@
             <div class="piedpage__s1__description">
             <h3>Notre mission</h3>
                 <p class="footer_mission"><?php echo $footer_mission ?></p>
+                <h6>Notre proposition du moment :</h6>
                 <img class="piedpage__s1__description__img" src="<?php echo $footer_imgFoot; ?>" alt="">
             </div>
         </section>

@@ -639,6 +639,8 @@ footer {
 }
 .piedpage__s1__description__img {
   max-width: 20vw;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 @media screen and (max-width: 800px) {
   .piedpage__s1__description {
