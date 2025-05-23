@@ -760,4 +760,29 @@ footer {
 
 /*
     -------------------------- Layout général pour les animations de texte dans le hero --------------------------
-*//*# sourceMappingURL=style.css.map */
+*/
+.hero__animation {
+  display: none;
+}
+.hero__animation--active {
+  display: block;
+}
+.hero__animation--active .hero__titre, .hero__animation--active .hero__description {
+  position: relative;
+  animation: contenu linear 1s forwards;
+}
+
+.hero__titre {
+  transform: translateY(-1000px);
+}
+
+.hero__description {
+  transform: translateX(-1000px);
+}
+
+@keyframes contenu {
+  100% {
+    transform: translate(0, 0);
+    animation-delay: 1s;
+  }
+}/*# sourceMappingURL=style.css.map */

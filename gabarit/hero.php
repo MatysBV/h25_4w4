@@ -24,29 +24,40 @@ for ($k = 0; $k < 3; $k++) {
 
     <!-- affiche dynamiquement les boutons radio -->
     <div class="hero__radio">
- 
+
         <?php
         for ($k = 0; $k < $NombreImagesCaroussel; $k++) {
             if ($k == 0) {
         ?>
- 
-            <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" type="radio" name="carrousel" checked>
- 
-        <?php } else { ?>
-            <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" type="radio" name="carrousel">
-        <?php } ?>
- 
+
+                <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" type="radio" name="carrousel" checked>
+
+            <?php } else { ?>
+                <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" type="radio" name="carrousel">
+            <?php } ?>
+
         <?php } ?>
     </div>
 
     <div class="hero__contenu global">
 
-        <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
+        <div class="hero__animation hero__animation--active">
+            <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
+            <p class="hero__description"><?php bloginfo('description'); ?></p>
+        </div>
+
+        <div class="hero__animation">
+            <h1 class="hero__titre">Partez à la découverte du monde avec Travelissima : des voyages sur mesure qui transforment vos rêves en réalité.</h1>
+            <p class="hero__description"><?php bloginfo('description'); ?></p>
+        </div>
+
+        <div class="hero__animation">
+            <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
+            <p class="hero__description"><?php bloginfo('description'); ?></p>
+        </div>
+        
         <p class="hero__auteur">
             <?php echo $hero_auteur; ?>
-        </p>
-        <p class="hero__description">
-            <?php bloginfo('description'); ?>
         </p>
         <p class="hero__courriel">
             <?php bloginfo('admin_email'); ?>
