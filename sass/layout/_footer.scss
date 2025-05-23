@@ -67,6 +67,12 @@ footer {
                 max-width: 20vw;
                 border: 1px solid black;
                 border-radius: 10px;
+
+                @media screen and (max-width:800px) {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 30vw;
+                }
             }
 
             @media screen and (max-width:800px) {
