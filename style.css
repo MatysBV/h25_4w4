@@ -769,7 +769,7 @@ footer {
 }
 .hero__animation--active .hero__titre, .hero__animation--active .hero__description {
   position: relative;
-  animation: contenu linear 1s forwards;
+  animation: contenu cubic-bezier(0.17, 0.67, 0.83, 0.67) 1s forwards;
 }
 
 .hero__titre {

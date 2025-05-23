@@ -11,7 +11,7 @@
         display: block;
         .hero__titre, .hero__description {
             position: relative;
-            animation: contenu linear 1s forwards;
+            animation: contenu cubic-bezier(.17,.67,.83,.67) 1s forwards;
           }
     }
 }

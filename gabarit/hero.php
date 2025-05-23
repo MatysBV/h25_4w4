@@ -47,7 +47,7 @@ for ($k = 0; $k < 3; $k++) {
         </div>
 
         <div class="hero__animation">
-            <h1 class="hero__titre">Partez à la découverte du monde avec Travelissima : des voyages sur mesure qui transforment vos rêves en réalité.</h1>
+            <h1 class="hero__titre">Des voyages sur mesure qui transforment vos rêves en réalité.</h1>
             <p class="hero__description"><?php bloginfo('description'); ?></p>
         </div>
 
