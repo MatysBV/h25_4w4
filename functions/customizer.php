@@ -74,6 +74,72 @@ function theme_tp_customize_register($wp_customize)
     }
 
 
+
+    /////////////////////   ICONE SOCIAUX DANS LE HERO ET LE FOOTER   ///////////////////// 
+
+    /**********/ ////////////////////////////////////////////////Début du champ hero_couleur_icones*/
+    ////////////////////////////////////////// ajout de la donnée de couleur des icones
+    $wp_customize->add_setting('hero_couleur_icones', array(
+        'default' => 'ffffff',
+        'sanitize_callback' => 'sanitize_hex_color_no_hash',
+    ));
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control($wp_customize, 'hero_couleur_icones', array(
+            'label' => __('Couleur Îcones Sociaux'),
+            'section' => 'hero_section',
+        ))
+    );
+
+    /**********/ ////////////////////////////////////////////////Début du champ hero_nb_icones*/
+    ////////////////////////////////////////// ajout de la donnée nombre d'image
+    $wp_customize->add_setting('hero_nb_icones', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'default' => 1,
+    ));
+
+    $wp_customize->add_control('hero_nb_icones', array(
+        'type' => 'number',
+        'section' => 'hero_section', // Add a default or your own section
+        'label' => __('Nombre Icones Sociaux'),
+    ));
+
+    /**********/ ////////////////////////////////////////////////Début des champs hero_icones*/
+    ////////////////////////////////////////// ajout de la donnée
+    $hero_nb_icones = get_theme_mod('hero_nb_icones', '1');
+
+    for ($k = 0; $k < $hero_nb_icones; $k++) {
+        $wp_customize->add_setting('hero_icones_' . $k, array(
+            'default' => __('wordpress', 'theme_4w4'),
+            'sanitize_callback' => 'sanitize_text_field'
+        ));
+
+        ////////////////////////////////////////// ajout du contrôle de la donnée
+        $wp_customize->add_control('hero_icones_' . $k, array(
+            'label' => __('Icones Reseaux Sociaux ' . ($k + 1), 'theme_4w4'),
+            'section' => 'hero_section',
+            'type' => 'text',
+        ));
+    }
+
+    /**********/ ////////////////////////////////////////////////Début des champs hero_lien_reseaux*/
+    ////////////////////////////////////////// ajout de la donnée
+    for ($k = 0; $k < $hero_nb_icones; $k++) {
+        $wp_customize->add_setting('hero_lien_reseaux_' . $k, array(
+            'default' => __('https://github.com/MatysBV/h25_4w4', 'theme_4w4'),
+            'sanitize_callback' => 'sanitize_text_field'
+        ));
+
+        ////////////////////////////////////////// ajout du contrôle de la donnée
+        $wp_customize->add_control('hero_lien_reseaux_' . $k, array(
+            'label' => __('Liens Reseaux Sociaux ' . ($k + 1), 'theme_4w4'),
+            'section' => 'hero_section',
+            'type' => 'text',
+        ));
+    }
+
+
+
+
     ####################### FOOTER #######################
 
     $wp_customize->add_section('footer_section', array(
@@ -199,4 +265,5 @@ function theme_tp_customize_register($wp_customize)
         'type' => 'text',
     ));
 }
+
 add_action('customize_register', 'theme_tp_customize_register');

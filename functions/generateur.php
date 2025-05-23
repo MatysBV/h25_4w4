@@ -46,10 +46,7 @@ function genere_vague($couleur) {?>
 <?php }
 
 /**
- * Génére une icone de réseaux sociaux
- * @param string $reseau l'image de l'icone du reseau social
- * @param string $lien_reseau le lien vers le reseau social
- * @param string $couleur la couleur de l'icone
+ * Génère une icone de réseaux sociaux
  */
 function genere_icone($reseau, $lien_reseau, $couleur)
 { ?>

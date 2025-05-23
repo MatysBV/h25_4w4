@@ -6,6 +6,21 @@
 for ($k = 0; $k < 3; $k++) {
     $hero_background[$k] = get_theme_mod('hero_background_' . $k,  '');
 }
+
+
+// ICONES DES RESEAUX SOCIAUX 
+
+// Déclarations des variables qui contient les données venant du customizer
+$hero_couleur_icones = get_theme_mod('hero_icones', 'ffffff');
+
+$hero_nb_icones = get_theme_mod('hero_nb_icones', 1);
+for ($k = 0; $k < $hero_nb_icones; $k++) {
+    $hero_icones[$k] = get_theme_mod('hero_icones_' . $k, 'wordpress');
+}
+ 
+for ($k = 0; $k < $hero_nb_icones; $k++) {
+    $hero_lien_reseaux[$k] = get_theme_mod('hero_lien_reseaux_' . $k, 'https://github.com/MatysBV/h25_4w4');
+}
 ?>
 
 <!-- affiche dynamiquement les images du caroussel -->
@@ -68,7 +83,9 @@ for ($k = 0; $k < 3; $k++) {
 
         <button class="hero__inscrire">S'INSCRIRE</button>
         <div class="hero__icone">
-            <?php get_template_part('gabarit/icones'); ?>
+            <?php for ($k = 0; $k < $hero_nb_icones; $k++) {
+                echo genere_icone($hero_icones[$k], $hero_lien_reseaux[$k], $hero_couleur_icones);
+            }; ?>
         </div>
     </div>
 
