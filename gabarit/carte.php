@@ -1,4 +1,5 @@
 <?php
+$categorie_nom = get_category(get_query_var('cat'))->cat_name;
 
 /** 
  * Template-part
@@ -15,7 +16,7 @@
         <h4 class="carte__titre"><?php the_title(); ?></h4>
         <p class="carte__description"><?php echo wp_trim_words(get_the_content(), 10, "..."); ?></p>
         <a class="carte__bouton carte__bouton-actif" href="<?php the_permalink(); ?>">Suite ...</a>
-        <?php the_category(); ?>
+        <?php categorie_par_destination($categorie_nom) ?>
         <p>Température maximum : <?php the_field('temperature_maximum'); ?> °C</p>
         <!-- <button class="carte__bouton carte__bouton--actif">Suite</button> -->
     </div>

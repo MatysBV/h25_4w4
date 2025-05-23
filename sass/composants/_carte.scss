@@ -56,10 +56,15 @@
     padding-left: 0;
 }
 
-.post-categories a {
+.carte__categorie__liste__tag a {
     color: #e54b4b;
     font-weight: bold;
-    text-decoration: none;
+    text-align: center;
+}
+
+.carte__categorie__liste {
+    list-style-type: none;
+    padding: 0;
 }
 
 .carte__contenu {
@@ -84,7 +89,7 @@
 
 .carte__contenu:hover {
     transform: scale(1.1);
-    transition: 200ms linear;
+    transition: 200 linear;
 }
 
 p {

@@ -58,4 +58,22 @@ function modifie_requete_principal( $query ) {
       }
      }
      add_action( 'pre_get_posts', 'modifie_requete_principal' );
+
+
+
+     // Cette fonction me permet de supprime la categorie active de l'article
+     function categorie_par_destination($categorie_nom)
+     {
+         echo '<ul class="carte__categorie__liste">';
+         foreach (get_the_category() as $categorie) {
+             if ($categorie->name !== $categorie_nom) {
+                 printf(
+                     '<li class="carte__categorie__liste__tag"><a href="%s">%s</a></li>',
+                     esc_url(get_category_link($categorie->term_id)),
+                     esc_html($categorie->name)
+                 );
+             }
+         }
+         echo '</ul>';
+     }
 ?>
