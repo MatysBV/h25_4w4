@@ -52,3 +52,14 @@ function genere_icone($reseau, $lien_reseau, $couleur)
 { ?>
     <a href="<?= $lien_reseau; ?>"><img class="iconeImg" src="https://s2.svgbox.net/social.svg?ic=<?= $reseau ?>&color=<?= $couleur ?>" width="20" height="20"></a>
 <?php  }
+
+
+function ListePays($listePays)
+{ ?>
+  <ul class="Liste__pays">
+    <?php for ($i = 0; $i < count($listePays); $i++) : ?>
+      <li class="pays" data-type="search" data-pays="<?php echo $listePays[$i] ?>"><?php echo $listePays[$i] ?></li>
+    <?php endfor; ?>
+  </ul>
+<?php  
+};

@@ -1,0 +1,26 @@
+.PagePays {
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6dc;
+}
+
+
+.PagePays .global article {
+    padding: 50px;
+    background-color: #f6f6dc;
+}
+
+.PagePays .global article h2 {
+    text-align: center;
+}
+
+.vaguePays {
+    background-color: #f6f6dc;
+    position: relative;
+    
+}
+
+.RestPays {
+    position: relative;
+    top: -20px;
+}
