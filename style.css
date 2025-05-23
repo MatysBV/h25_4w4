@@ -637,6 +637,9 @@ footer {
   flex: 1 0 33%;
   font-weight: bold;
 }
+.piedpage__s1__description__img {
+  max-width: 20vw;
+}
 @media screen and (max-width: 800px) {
   .piedpage__s1__description {
     display: flex;

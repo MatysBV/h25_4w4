@@ -126,6 +126,18 @@ function theme_tp_customize_register($wp_customize)
         'section' => 'footer_section',
     )));
 
+    ////////////////////////////////////////// ajout de la donnée image (dans le footer)
+    $wp_customize->add_setting('footer_imgFoot', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    ////////////////////////////////////////// ajout du contrôle de la donnée image
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_imgFoot', array(
+        'label' => __('Image Footer', 'theme_tp'),
+        'section' => 'footer_section',
+    )));
+
+
 
 
 

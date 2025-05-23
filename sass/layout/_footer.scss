@@ -63,6 +63,10 @@ footer {
             flex: 1 0 33%;
             font-weight: bold;
 
+            &__img{
+                max-width: 20vw;
+            }
+
             @media screen and (max-width:800px) {
                 display: flex;
                 flex-direction: column;

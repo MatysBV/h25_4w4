@@ -2,6 +2,8 @@
 <?php $footer_telephone = get_theme_mod('footer_telephone', '(514-254-7131)'); ?>
 <?php $footer_mission = get_theme_mod('footer_mission', 'Notre mission est de faciliter vos recherche afin de découvrir les plus beaux endroit de la planète'); ?>
 <?php $footer_couleur = get_theme_mod('footer_couleur', '#aaa'); ?>
+<?php $footer_imgFoot = get_theme_mod('footer_imgFoot', ''); ?>
+
 
 <?php genere_vague($footer_couleur); ?>
 
@@ -30,6 +32,7 @@
             <div class="piedpage__s1__description">
             <h3>Notre mission</h3>
                 <p class="footer_mission"><?php echo $footer_mission ?></p>
+                <img class="piedpage__s1__description__img" src="<?php echo $footer_imgFoot; ?>" alt="">
             </div>
         </section>
 
