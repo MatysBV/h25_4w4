@@ -2,7 +2,7 @@
 
 <?php
 /*
-Template Name: Template Événement
+Template Name: Template Pays
 */
 get_header();
 ?>
