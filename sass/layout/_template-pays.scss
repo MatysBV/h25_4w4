@@ -1,5 +1,7 @@
 .PagePays {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: #f6f6dc;
 }
@@ -17,10 +19,30 @@
 .vaguePays {
     background-color: #f6f6dc;
     position: relative;
-    
+
 }
 
 .RestPays {
     position: relative;
     top: -20px;
+}
+
+.Liste__pays {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.Liste__pays li {
+    background-color: #f6f6dc;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.Liste__pays li:hover {
+    transform: scale(1.2);
+    transition: 200ms linear;
 }
