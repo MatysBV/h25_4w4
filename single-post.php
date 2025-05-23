@@ -19,7 +19,7 @@
                         <p>Température moyenne : <?php the_field('temperature_moyenne') ?>°C</p>
 
                         <div class="InfoPubli">
-                            <p>Auteur(e) : <?php the_author(); ?></p>
+                            <p>Auteur : <?php the_author(); ?></p>
                             <p>Date de publication : <?php the_date(); ?></p>
                         </div>
                     </article>
