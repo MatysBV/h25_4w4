@@ -77,19 +77,6 @@ function theme_tp_customize_register($wp_customize)
 
     /////////////////////   ICONE SOCIAUX DANS LE HERO ET LE FOOTER   ///////////////////// 
 
-    /**********/ ////////////////////////////////////////////////Début du champ hero_couleur_icones*/
-    ////////////////////////////////////////// ajout de la donnée de couleur des icones
-    $wp_customize->add_setting('hero_couleur_icones', array(
-        'default' => 'ffffff',
-        'sanitize_callback' => 'sanitize_hex_color_no_hash',
-    ));
-    $wp_customize->add_control(
-        new WP_Customize_Color_Control($wp_customize, 'hero_couleur_icones', array(
-            'label' => __('Couleur Îcones Sociaux'),
-            'section' => 'hero_section',
-        ))
-    );
-
     /**********/ ////////////////////////////////////////////////Début du champ hero_nb_icones*/
     ////////////////////////////////////////// ajout de la donnée nombre d'image
     $wp_customize->add_setting('hero_nb_icones', array(
@@ -136,6 +123,19 @@ function theme_tp_customize_register($wp_customize)
             'type' => 'text',
         ));
     }
+
+        /**********/ ////////////////////////////////////////////////Début du champ hero_couleur_icones*/
+    ////////////////////////////////////////// ajout de la donnée de couleur des icones
+    $wp_customize->add_setting('hero_couleur_icones', array(
+        'default' => 'ffffff',
+        'sanitize_callback' => 'sanitize_hex_color_no_hash',
+    ));
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control($wp_customize, 'hero_couleur_icones', array(
+            'label' => __('Couleur Îcones Sociaux'),
+            'section' => 'hero_section',
+        ))
+    );
 
 
 
