@@ -1,3 +1,5 @@
+<?php $imageDefaut = get_theme_mod('imageSinglePost_imageDefaut', ''); ?>
+    
     <?php get_header(); ?>
     <!--  -->
     <!--  -->
@@ -10,6 +12,11 @@
                         <?php
                         if (has_post_thumbnail()) {
                             the_post_thumbnail('large');
+                        }
+                        else{
+                            ?>
+                            <img src="<?php echo $imageDefaut; ?>" alt="">
+                            <?php
                         }
                         ?>
                         <h2><?php the_title(); ?></h2>

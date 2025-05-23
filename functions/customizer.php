@@ -138,6 +138,24 @@ function theme_tp_customize_register($wp_customize)
     );
 
 
+    /*########################### SECTION POUR LES ARTICLES DES POSTS (AJOUTER DES IMAGES) ##############################*/
+    // Création de la nouvelle section
+    $wp_customize->add_section('section_imageSinglePost', array(
+        'title' => __('Section image SinglePost', 'theme_tp'),
+        'priority' => 30,
+    ));
+    /**********/ ////////////////////////////////////////////////Début du champ imageSinglePost_imageDefaut*/
+    ////////////////////////////////////////// ajout de la donnée image
+    $wp_customize->add_setting('imageSinglePost_imageDefaut', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    ////////////////////////////////////////// ajout du contrôle de la donnée image
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'imageSinglePost_imageDefaut', array(
+        'label' => __('Image  par Defaut pour les Destinations', 'theme_tp'),
+        'section' => 'section_imageSinglePost',
+    )));
+
 
 
     ####################### FOOTER #######################
